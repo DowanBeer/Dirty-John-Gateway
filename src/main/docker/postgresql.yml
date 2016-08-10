@@ -1,0 +1,12 @@
+version: '2'
+services:
+    djgateway-postgresql:
+        container_name: djgateway-postgresql
+        image: postgres:9.5.3
+        # volumes:
+        #     - ~/volumes/jhipster/djgateway/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=djgateway
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
